@@ -96,3 +96,11 @@ div {
     align-items: center;
     align-content: stretch;
 }
+.skip {
+    font-size: 14px;
+    background-color: #f1aeae;
+    border-radius: 10px;
+    padding: 3px;
+    text-decoration: none;
+    color: #15151E;
+}

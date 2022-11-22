@@ -1,0 +1,98 @@
+body {
+    top: 0;
+    left: 0;
+    background-image: url("../images/bq.png");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+ul {
+    position: relative;
+    border-radius: 25px;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1aeae;
+    left: 0;
+}
+li {
+    float: right;
+    width: 100px;
+}
+
+li a {
+    display: block;
+    color: #15151E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #91add7;
+    border-style: solid;
+    border-color: #15151E;
+    border-radius: 25px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    max-height: 50px;
+    float: left;
+}
+
+main {
+    text-align: center;
+    color: rgb(38, 43, 65);
+}
+
+div {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.page {
+    background-color: #f1aeaebd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.page p, h3, h2, h1 {
+    padding-left: 15px;
+}
+
+.villagers {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}

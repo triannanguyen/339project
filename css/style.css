@@ -7,6 +7,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -83,6 +84,16 @@ div {
 
 .page p, .page1 p, h3, h2, h1 {
     padding-left: 15px;
+}
+
+footer {
+    background-color: #f1aeae;
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .villagers {

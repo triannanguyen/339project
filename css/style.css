@@ -70,20 +70,15 @@ div {
     margin-bottom: 20px;
 }
 
-.page {
+.page, .page1 {
     background-color: #f1aeaebd;
     border-radius: 25px;
     overflow: hidden;
 }
 
-.page1 {
-    background-color: #f1aeaebd;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.page p, .page1 p, h3, h2, h1 {
+.page p, .page1 p, h3, h2, h1, footer {
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 footer {
@@ -94,6 +89,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    overflow: hidden;
 }
 
 .villagers {
@@ -156,14 +152,18 @@ h1 {
 }
 
 
-#skip-to-main {
+#header-light, #header-dark {
     height: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-@media screen and (min-width: 720px) {
+#header-dark {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
     nav {
         position: fixed;
         width: auto;
@@ -206,11 +206,39 @@ h1 {
     .grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
     }
 
     .page1 {
         width: 30%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url("../images/bgdark.png");
+    }
+    ul {
+        background-color: #86a2cd;
+    }
+    .active {
+        background-color: #f1aeae;
+        border-color: #e8e8e8;
+    }
+    .page, .page1 {
+        background-color: #7594c29d;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    footer {
+        background-color: #86a2cd;
+    }
+    main {
+        color: rgb(19, 21, 30);
+    }
+    #header-dark {
+        display: block;
+    }
+    #header-light {
+        display: none;
     }
 }
